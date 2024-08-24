@@ -9,8 +9,10 @@ export default (otdJournalEntry) => {
 tags:
     - OnThisDayApp
 ---
-# ${otdJournalEntry.getTitle()}
+# ${otdJournalEntry.getTitle()}  
+
 ${otdJournalEntry.getBody()}
+
 ---  
 # Metadata
 Audios: ${otdJournalEntry.getAudios()}
