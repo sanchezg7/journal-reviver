@@ -1,8 +1,11 @@
 import fs from "fs";
+import journal from "./journal.js";
 
 try {
     const data = fs.readFileSync("../GJournal.json", "utf-8");
-    console.log(data);
+    const json = JSON.parse(data);
+    const theJournal = journal(json);
+    console.log(theJournal);
 } catch (err) {
     console.error(err);
 }
